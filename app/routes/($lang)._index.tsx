@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import {SanityPreview} from 'hydrogen-sanity';
 import {Suspense} from 'react';
 
+import About from '~/components/heroes/About';
 import HomeHero from '~/components/heroes/Home';
 import ModuleGrid from '~/components/modules/ModuleGrid';
 import type {SanityHomePage} from '~/lib/sanity';
@@ -68,6 +69,7 @@ export default function Index() {
                 <ModuleGrid items={page.modules} />
               </div>
             )}
+            {page?.hero && <About hero={page.hero} />}
           </Await>
         </Suspense>
       )}
