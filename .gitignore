@@ -72,8 +72,5 @@ yalc.lock
 # VSCode workspace settings
 .vscode/settings.json
 
-# environment variables
-.env
-
 # Mac OS finder cache files
 .DS_Store
